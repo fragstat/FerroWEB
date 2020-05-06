@@ -63,5 +63,16 @@
     <url-pattern>/database</url-pattern>
   </servlet-mapping>
 
+  <!-- textRedactor servlet -->
+  <servlet>
+    <servlet-name>textRedactor</servlet-name>
+    <servlet-class>app.servlets.TextRedactorServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>textRedactor</servlet-name>
+    <url-pattern>/textRedactor</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
