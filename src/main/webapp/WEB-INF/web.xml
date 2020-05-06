@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- add servlet -->
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>app.servlets.AddServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <!-- list servlet -->
+  <servlet>
+    <servlet-name>list</servlet-name>
+    <servlet-class>app.servlets.ListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>list</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+
+  <!-- edit servlet -->
+  <servlet>
+    <servlet-name>edit</servlet-name>
+    <servlet-class>app.servlets.EditServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+
+  <!-- delete servlet -->
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>app.servlets.DeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+
+  <!-- database servlet -->
+  <servlet>
+    <servlet-name>database</servlet-name>
+    <servlet-class>app.servlets.DatabaseServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>database</servlet-name>
+    <url-pattern>/database</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
