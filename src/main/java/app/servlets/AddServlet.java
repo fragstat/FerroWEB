@@ -1,6 +1,7 @@
 package app.servlets;
 
 import app.entities.User;
+import app.model.FirebaseDatabase;
 import app.model.Model;
 
 import javax.servlet.RequestDispatcher;
@@ -27,6 +28,9 @@ public class AddServlet extends HttpServlet {
         User user = new User(name,password);
         Model model = Model.getInstance();
         model.add(user);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        database.register(name);
 
         req.setAttribute("userName", name);
         doGet(req, resp);
