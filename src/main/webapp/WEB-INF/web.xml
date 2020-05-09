@@ -85,5 +85,16 @@
     <url-pattern>/textRedactor</url-pattern>
   </servlet-mapping>
 
+  <!-- FerroTrade servlet -->
+  <servlet>
+    <servlet-name>ferroTrade</servlet-name>
+    <servlet-class>app.servlets.FerroTradeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ferroTrade</servlet-name>
+    <url-pattern>/ferroTrade</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
